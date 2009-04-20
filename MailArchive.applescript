@@ -5,7 +5,7 @@ using terms from application "Mail"
 			set msgAccount to name of account of mailbox of thisMessage
 			set msgMailbox to name of mailbox of thisMessage
 			set mboxName to "Archive"
-			tell account "personal"
+			tell account msgAccount
 				try
 					set mbox to mailbox named mboxName
 					get name of mbox
